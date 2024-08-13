@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ Para a Liviah ❤️</title>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/estilo.css">
+
+    <link rel="preload" as="image" href="imagens/fundo2.gif">
+    <link rel="preload" as="image" href="imagens/fundo3.gif">
+    <link rel="preload" as="image" href="imagens/fundo4.jpg">
+    <link rel="preload" as="image" href="imagens/fundo7.gif">
+    <link rel="preload" as="image" href="imagens/fundo9.gif">
+    <link rel="preload" as="audio" href="assets/musica.mp3">
+
+</head>
+<body class="fundo1">
+
+    <div class="pop-up">
+        <h1 class="text-muted">Título teste</h1>
+        <div>Descriçao teste</div>
+        <section class="text-center">
+            <button class="btn-azul" onclick="mostraPopUp(false)">Fechar</button>
+        </section>
+    </div>
+    
+    <div class="container d-flex justify-content-center">
+
+        <div id="tela1" class="tela tela-centro visivel">
+            <h1 class="text-muted">Oi amor</h1>
+            <p>Queria te mostrar algumas coisas</p>
+            <button class="mudaTela btn-azul">Estou pronta!</button>
+
+            <!--
+            <div class="mt-5">
+
+                <a href="#" class="opcoes">Ver opções</a>
+                <div class="invisivel opcoes">
+                    <p>Se quiser, você pode escolher começar de uma tela específica:</p>
+                    <button class="btn-rosa mudaTela" tela="">Início</button>
+                    <button class="btn-rosa">Mensagens</button>
+                    <button class="btn-rosa">Momentos marcantes</button>
+                    <button class="btn-rosa">O que você mudou em mim</button>
+                    <button class="btn-rosa">Nossa primeira conversa</button>
+                    <button class="btn-rosa">Memorial</button>
+                    <button class="btn-rosa">Declaração</button>
+                    <button class="btn-rosa">Final</button>
+                </div>
+
+            </div>
+            -->
+
+        </div>
+
+        <div id="tela2" class="tela" fundo="fundo1">
+            <p class="text-muted"><small>Antes de começar, confirme:</small>
+                <br>
+            <strong>Você conhece esta pessoa?</strong></p>
+            <img src="imagens/amorzinho.jpg" class="custom" width="150" alt="">
+            <br>
+
+            <button class="mudaTela btn-azul btn-block mt-5" animacao="null" tempoAnimacao="500">Sim</button>
+            <br>
+            <button class="btn-vermelho btn-block " onclick="alert('Poisé, mas era você a alguns dias atrás');"animacao="null" tempoAnimacao="500">Não</button>
+
+        </div>
+
+        <div id="tela3" class="tela">
+            <p><strong>Tem certeza?</strong><br> Olhe bem pra essa bela moça:</p>
+            <img src="imagens/amorzinho2.jpg" class="custom" width="150" alt="">
+
+            <br>
+            <button class="mudaTela btn-block btn-azul">Sim, Eu mesmo!</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Não tenha vergonha, tava uma graça');" >Não, Deus me livre</button>
+        </div>
+
+        <div id="tela4" class="tela">
+            <h2>Espere...</h2>
+
+            <img src="imagens/espere.jpg" class="custom mb-4" width="150" alt="">
+
+            <p>É a <strong>Liviah</strong> que está acessando essa página agora?
+                <br><small class="text-muted" style="font-weight: 700;">Sim, LiviAH, com H no final (Para ter um nome de 6 letras)</small>
+            </p>
+
+            <button class="mudaTela btn-azul">Sim, sou eu</button>
+            <button class="mudaTela btn-vermelho btn-block" onclick="alert('Você deveria ter vergonha de estar aqui!\n\nBom, eu sei que mesmo eu te levando para outra página, você voltará aqui depois porque sua curiosidade o obriga a isso, então pode seguir para a próxima página.');" >Não, eu sou uma amiga ou conhecido da Liviah que está acessando esse site, mesmo tendo sido um presente que o namorado DELA, presenteou ELA</button>
+        </div>
+
+        <div id="tela5" class="tela">
+            <p>Escute a música de fundo.</p>
+            <hr>
+            <p><small>Quando estiver ouvindo-a em claro e bom tom, clique no botão.</small></p>
+            <button class="mudaTela btn-azul">Continuar</button>
+        </div>
+
+        <div id="tela6" class="invisivel letra2 temporizado tela-centro" fundo="fundo2" style="color: #FFF;" tempo="3000" >
+            <div tempo="3000">
+                <p>Bom, então vamos lá...</p>
+            </div>
+            <div tempo="3000">
+                <p>eu queria que você soubesse de algumas coisas.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>Fiz esse presente para você.</p>
+            </div>
+        </div>
+
+        <div id="tela7" class="invisivel temporizado letra2 tela-centro" fundo="fundo3" style="color: #FFF;"  tempo="3000" >
+            <div tempo="3000">
+                <p>As vezes é difícil imaginar...</p>
+            </div>
+            <div tempo="2500">
+                <p>que eu, alguém que não tinha nada...</p>
+            </div>
+            <div tempo="2500">
+                <p>encontraria alguém como você...</p>
+            </div>
+            <div tempo="4000">
+                <p>e mudaria o meu eu...</p>
+            </div>
+            <div tempo="4000" final="true">
+                <p>por completo.</p>
+            </div>
+        </div>
+
+        <div id="tela8" class="tela-centro tela" fundo="fundo4" tempo="6000">
+         
+            <p>E eu quero te mostrar isso.</p>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela9" class="tela">
+
+            <div class="text-start">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">O quão linda você É!</h2>
+                    <img src="imagens/tela9-1.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Essa é minha foto favorita sua.</strong></p>
+                </div>
+                <hr>
+                <p><span class="letra2 letra-vermelha" style="font-size: 1em;">Eu as vezes me assusto com sua beleza.</span><br>Lembra das vezes que eu perguntava <strong class="text-muted">"Como você faz pra ser tão linda?"</strong> ou <strong class="text-muted">"Vai toma no C*, por que você é tão bonita?"</strong></p>
+                <p>Todas as vezes eram verdades, e vou lhe destacar os pontos que eu amo na sua aparencia (Alerta, alto indicie de romantismo e esforço de alguém que não sabe se expressar):</p>
+                <ul>
+                    <li><strong class="letra-vermelha">O seu sorriso.</strong> Eu não sei o que acontece, eu sempre me apaixono toda vez que você sorri daquele jeito. Quando eu faço algo que você ama, a minima coisa, e você abre seus dentes perfeitos e eu penso comigo mesmo <strong class="text-muted">"Cara, ela é demais!"</strong>. Eu amo esse momento, e eu fiz, faço e sempre farei de tudo pra te ver sorrindo desse jeito.</li>
+                    <li><strong class="letra-vermelha">Os seus olhos.</strong> Você sabe que eu não gosto de verde, mas sério, os seus olhos são os mais lindos que EU JÁ VI. Eu me perco toda vez que você me olha, eu vejo nele o céu mais lindo, um lugar que eu queria ficar por toda a minha vida. Toda vez que você chora, esse céu fecha, e eu não gosto disso, ele é meu lar, espero olhar pra ele por todo o sempre</li>
+                    <li><strong class="letra-vermelha">O seu corpo.</strong> Em todo o nosso namoro, eu ainda desconfio que você é uma deusa grega expulsa do olimpo por ser mais linda que Afrodite. Ou sei lá, um anjo que caiu do céu por ser desastrado <strong class="text-muted">(O que é a sua cara)</strong>. Eu ainda não acredito que eu te namoro, não caiu minha ficha, você é perfeita.</li>
+                    <li><strong class="letra-vermelha">Os seus supostos "defeitos".</strong> Você as vezes fala do que você não gosta em você, mas eu amo de paixão. Sua dermatite, que eu ainda acho não é problema de pele, e sim o problema de ser o amor da minha vida. Os seus pés, que são literalmente pés de princesa, e todas as outras coisas, não são defeitos, são o que fazem ser você, a mulher da minha vida</li>
+                </ul>
+
+                <hr>
+
+                <div class="text-center">
+                    <p>E esse é só algum dos pontos.</p>
+                </div>
+
+                
+
+            </div>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+
+        </div>
+
+        <div id="tela10" class="tela">
+
+            <div class="text-left">
+                <div class="text-center">
+                    <h2 class="letra-vermelha">A mulher maravilhosa que você é!</h2>
+                    <img src="imagens/tela10.png" alt="">
+                    <p class="letra2" style="font-size: 0.8em;"><strong>Eu amo essa foto de um jeito kkkkkkkkkk.</strong></p>    
+                </div>
+                <hr>
+                <p class="letra-vermelha"><strong>Deixa eu te contar o que talvez você não saiba</strong></p>
+                <p>Teve uma vez que eu fui te levar na sua casa depois da aula, e sua vizinha saiu e viu a gente, lembra do que ela disse?</p>
+                <p>Eu faço dela as minhas palavras, você é literalmente uma mulher incrivel, e todas as vezes que eu passei dos limites em algumas das minhas palavras, me perdoa, mas foi tentando te explicar que você é simplesmente alguém que não merece <strong class="letra-vermelha">NADA DE RUIM NESSE MUNDO.</strong> Você é uma das pessoas que mais passaram por coisas, e batalha pra conseguir algo melhor, e de coração, você é minha inspiração amor, alguém que eu me baseio, e quem eu quero trazer um futuro.</p>
+                <p>E tudo isso pelo tempo que eu convivi com você, você sabe o quão seleta são minhas inspirações, e você é uma delas.</p>
+                <hr>
+                <p>Você é simplesmente incrivel, alguém que consegue me tirar de casa todo dia, só pra poder escutar.</p>
+                <p>É muito incrivel o que você faz por mim e pelas outras pessoas, eu só vou pra aula por sua conta, eu falto sempre que você falta, e me motiva sempre a ser melhor.</p>
+                <hr>
+                <p>É bizarro, porque:</p>
+                <p><strong class="letra-vermelha">Você</strong> É a primeira pessoa que eu quero contar quando eu conquisto algo, quando eu fico feliz com alguma coisa. Mas é <strong class="letra-vermelha">Você</strong> a única pessoa próxima que eu escondo minhas falhas. Você sabe que eu sou super de boa com os erros: <strong class="text-muted">"Mas ta tranquilo se errar, todo mundo erra, que se foda"</strong> Mas eu não consigo, eu não choro ao seu lado, eu não quero mostrar meus erros, nem porque eu não confio em você, mas eu não quero que você me veja desse jeito</p>
+                <hr>
+                <p>Você é alguém que merece tudo na vida, e eu luto pra ser o melhor que já esteve com você.</p>
+                <p>As vezes eu peso a mão na parada das suas amigas, porque você merece o mundo, e eu tenho medo de alguém não ser o suficiente, inclusive a mim. Não é a parada que todos erram, você merece muito mais que isso</p>
+                <h3 class="letra-vermelha mt-5 mb-5">Você merece o mundo.</h3>
+
+            </div>
+
+            <button class="mudaTela btn-rosa">Continuar</button>
+
+        </div>
+
+        <div id="tela11" class="tela">
+            <h2 class="letra-vermelha">Nessa hora minha perna tremeu como nunca</h2>
+            <p>E foi logo quando eu cheguei em casa</p>
+
+            <img src="imagens/tela12.png" alt="">
+            <hr>
+            <p>Um dos meus traumas foi justamente a minha cirurgia, e saber que por mais que não fosse a mesma gravidade, foi a mesma cirurgia, e naquele dia eu estava assombrado.</p>
+            <p>Aquela noite eu não consegui estudar, eu só pensava em conseguir te ver, porque eu sabia o quão assustador era, eu só queria poder te dar um abraço, fazer uma piada sem graça pra tentar te animar, mesmo que nunca dê certo, e falar que eu te <strong class="letra-vermelha">amo</strong></p>
+            <p>Única coisa que eu consegui fazer foi buscar por benção, e assim eu te dei a santinha, a que eu sempre rezo toda noite, e adoro sempre que saio ou entro de Osvaldo Cruz</p>
+
+            <button class="mudaTela btn-rosa mt-3">Continuar</button>
+        </div>
+
+        <div id="tela12" class="tela">
+            <h2 class="letra-vermelha">Mas então eu rezei</h2>
+            <p>No outro dia eu faltei de manha, e junto de um amigo meu entramos em oração, o mesmo terço que minha vó rezou a 4 anos atrás quando eu estava mal</p>
+            <p>O nome do terço é <strong class="letra-vermelha">Maria Passa na Frente,</strong> e eu naquela hora, saiba, a Mamãe do céu cuidou de você</p>
+            <hr>
+            <p>Mesmo assim, sua cirurgia demorou, e mesmo tendo acabado, você não voltava, a morfina tinha dado efeito, eu sabia o quão mal você tava, eu já tinha entregado tudo aos céus. Mas foi no ônibus que eu recebi a noticia que você tinha voltado ao quarto, e que estava tudo bem</p>
+            <hr>
+            <img src="imagens/cirurgia.jpg" alt="">
+
+            <button class="mudaTela btn-rosa mt-5">Continuar</button>
+
+        </div>
+
+        <div id="tela13" class="invisivel temporizado letra2 tela-centro" fundo="fundo5" style="color: #FFF;" tempo="2000" >
+            <div tempo="3000">
+                <p>Apesar dessas páginas não terem funcionado da ultima vez...</p>
+            </div>
+            <div tempo="2500">
+                <p>Eu tentei de novo...</p>
+            </div>
+            <div tempo="3000" >
+                <p>tentei passar o que eu sinto...</p>
+            </div>
+            <div tempo="3000">
+                <p>tentei te presentear, sem ter nada a oferecer...</p>
+            </div>
+            <div tempo="4000">
+                <p>espero que dessa vez você sinta...</p>
+            </div>
+            <div tempo="4000">
+                <p>o que eu senti todas as vezes que eu passei noites acordado...</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>Só pra tentar te mostrar o 1% do amor que eu sinto por você ❤️</p>
+            </div>
+        </div>
+
+        <div id="tela14" class="invisivel temporizado letra2 tela-centro" fundo="fundo11" style="color: #999;" tempo="2500" >
+            <h2 class="text-muted mb-5 mt-2">Você abriu seu presente?</h2>
+            <button class="mudaTela btn-block btn-azul">SIM</button>
+            <br>
+            <button class="btn-block btn-vermelho" onclick="alert('Abre ele ai para poder prosseguir');">NÃO</button>
+        </div>
+
+        <div id="tela15" class="invisivel temporizado letra2 tela-centro" fundo="" style="color: #999;" tempo="1500" >
+            <div tempo="2000">
+                <p>Bom...</p>
+            </div>
+            <div tempo="3500">
+                <p>apesar de não ser muito bom em ideias...</p>
+            </div>
+            <div tempo="3500" >
+                <p>eu te dei um escapulário muito mais do que um simples simbolo de proteção...</p>
+            </div>
+            <div tempo="5000">
+                <p>e sim pra você lembrar pelo o que você passou, o quão forte você é, e que a Nossa Senhora sempre vai passar na frente...</p>
+            </div>
+            <div tempo="4000">
+                <p>independente dos demônios que surgirem...</p>
+            </div>
+            <div tempo="2000">
+                <p>Mas enfim...</p>
+            </div>
+            <div tempo="5000">
+                <p>FELIZ ANIVERSÁRIO MINHA PRINCESA</p>
+            </div>
+            <div tempo="3000">
+                <p>Eu te amo muuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...</p>
+            </div>
+            <div tempo="3000">
+                <p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu...</p>
+            </div>
+            <div tempo="2500">
+                <p>uuuuuuuuuuuuuuuuuuiiiitão mesmo ta.</p>
+            </div>
+            <div tempo="3000" final="true">
+                <p>independente de tudo, eu quero o maior sucesso e a maior felicidade pra você</p>
+            </div>
+        </div>
+
+        <div id="tela16" class="invisivel temporizado letra2 tela-centro" fundo="fundo6" style="color: #FFF;" tempo="1500" >
+            <div tempo="10000" class="text-center">
+                <p class="mb-0">Obrigado por estar comigo.</p>
+                <img src="imagens/final.jpg" class="custom" width="150" alt="">
+                <p>❤️minha PRINCESA❤️</p>
+                <div class="text-center">
+                    <span style="font-size:0.4em; color: #555;">fim</span>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+    
+
+    <!--<script src="assets/js/bootstrap.min.js"></script>-->
+
+    <script src="assets/script.js"></script>
+    <!--<script src="assets/all.min.js"></script>-->
+
+</body>
+</html>
